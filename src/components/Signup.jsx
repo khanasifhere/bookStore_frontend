@@ -21,7 +21,7 @@ function Signup() {
       password: data.password,
     };
     await axios
-      .post("https://dc0775f2-c637-487e-9d97-f4794ed997d1.e1-us-east-azure.choreoapps.dev/user/signup", userInfo)
+      .post("/api/user/signup", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {

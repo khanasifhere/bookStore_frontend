@@ -2,16 +2,14 @@ import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
 import axios from "axios";
 import { Link } from "react-router-dom";
-
 function Course() {
   const [book, setBook] = useState([]);
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("https://dc0775f2-c637-487e-9d97-f4794ed997d1.e1-us-east-azure.choreoapps.dev/book");
-        const data=res.data;
-        console.log(data);
-        setBook(data);
+        const res = await axios.get("/api/book");
+        console.log(res.data);
+        setBook(res.data);
       } catch (error) {
         console.log(error);
       }
