@@ -1,13 +1,5 @@
 {
-    "routes":[
-        {
-            "src":"/course",
-            "dest":"/"
-        },
-        {
-            "src":"/signup",
-            "dest":"/"
-        }
-    ]
-    
-}
+    "rewrites":  [
+        {"source": "/(.*)", "destination": "/"}
+     ]
+ }
