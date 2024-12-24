@@ -2,14 +2,16 @@ import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
 import axios from "axios";
 import { Link } from "react-router-dom";
+
 function Course() {
   const [book, setBook] = useState([]);
   useEffect(() => {
     const getBook = async () => {
       try {
         const res = await axios.get("https://dc0775f2-c637-487e-9d97-f4794ed997d1.e1-us-east-azure.choreoapps.dev/book");
-        console.log(res.data);
-        setBook(res.data);
+        const data=res.data;
+        console.log(data);
+        setBook(data);
       } catch (error) {
         console.log(error);
       }
@@ -36,7 +38,7 @@ function Course() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
           {book.map((item) => (
-            <Cards key={item.id} item={item} />
+            <Cards key={item._id} item={item} />
           ))}
         </div>
       </div>

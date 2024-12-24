@@ -14,13 +14,13 @@ function App() {
     <>
       <div className="dark:bg-slate-900 dark:text-white">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="https://book-store-frontend-three-peach.vercel.app" element={<Home />} />
           <Route
-            path="/course"
+            path="https://book-store-frontend-three-peach.vercel.app/course"
             element={authUser ? <Courses /> : <Navigate to="/signup" />}
           />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/Contact" element={<ContactFull/>}/>
+          <Route path="https://book-store-frontend-three-peach.vercel.app/signup" element={<Signup />} />
+          <Route path="https://book-store-frontend-three-peach.vercel.app/Contact" element={<ContactFull/>}/>
         </Routes>
         <Toaster />
       </div>
