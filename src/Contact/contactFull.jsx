@@ -13,4 +13,4 @@ import React from "react";
     </>
     );
 }
-export default ContactFull
+export default ContactFull;
