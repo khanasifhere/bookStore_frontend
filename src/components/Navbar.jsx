@@ -39,13 +39,13 @@ function Navbar() {
   const navItems = (
     <>
       <li>
-        <a href="https://book-store-frontend-three-peach.vercel.app/">Home</a>
+        <a href="/">Home</a>
       </li>
       <li>
-        <a href="https://book-store-frontend-three-peach.vercel.app/course">Course</a>
+        <a href="/course">Course</a>
       </li>
       <li>
-        <a href="https://book-store-frontend-three-peach.vercel.app/Contact">Contact</a>
+        <a href="/Contact">Contact</a>
       </li>
       <li>
         <a>About</a>
