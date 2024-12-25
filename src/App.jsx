@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./home/Home.jsx";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter , Route, Routes } from "react-router-dom";
 import Courses from "./courses/Courses.jsx";
 import Signup from "./components/Signup.jsx";
 import { Toaster } from "react-hot-toast";
@@ -11,7 +11,7 @@ function App() {
   const [authUser, setAuthUser] = useAuth();
   console.log(authUser);
   return (
-    <Router>
+    <BrowserRouter>
       <div className="dark:bg-slate-900 dark:text-white">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,7 +24,7 @@ function App() {
         </Routes>
         <Toaster />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
