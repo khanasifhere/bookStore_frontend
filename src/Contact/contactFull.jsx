@@ -1,3 +1,4 @@
+import React from "react";
 import Contact from "./Contact";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
