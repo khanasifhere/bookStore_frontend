@@ -47,9 +47,7 @@ function Navbar() {
       <li>
       <Link to="/Contact">Contact</Link>
       </li>
-      <li>
-      <Link to="/About">About</Link>
-      </li>
+      
     </>
   );
   return (
@@ -151,7 +149,7 @@ function Navbar() {
               <Logout />
             ) : (
               <div className="">
-                <a
+                <a 
                   className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
                   onClick={() =>
                     document.getElementById("my_modal_3").showModal()

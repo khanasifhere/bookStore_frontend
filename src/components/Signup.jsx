@@ -112,10 +112,14 @@ function Signup() {
                   <button
                     className="underline text-blue-500 cursor-pointer"
                     onClick={() =>
+                      
                       document.getElementById("my_modal_3").showModal()
+                       
                     }
+                   
                   >
-                    Login
+                    <Link to='/'>Login</Link>
+                    
                   </button>{" "}
                   <Login />
                 </p>
