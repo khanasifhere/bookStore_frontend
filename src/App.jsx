@@ -5,8 +5,7 @@ import Courses from "./courses/Courses.jsx";
 import Signup from "./components/Signup.jsx";
 import { Toaster } from "react-hot-toast";
 import { useAuth } from "./context/AuthProvider.jsx";
-// import { Router } from "express";
-import ContactFull from "./Contact/ContactFull.jsx"
+import Contacts from "./Contact/Contacts.jsx";
 function App() {
   const [authUser, setAuthUser] = useAuth();
   console.log(authUser);
@@ -20,7 +19,7 @@ function App() {
             element={<Courses />} 
           />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/Contact" element={<ContactFull/>}/>
+          <Route path="/Contact" element={<Contacts/>}/>
         </Routes>
         <Toaster />
       </div>
